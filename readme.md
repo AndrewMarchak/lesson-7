@@ -13,5 +13,9 @@
 - git log
 
 - git log --pretty=format:"%h - %an, %ar - %s"
+- git log -p -2
 
 - git reset --hard HEAD~1
+
+-git restore .
+-git restore filename
