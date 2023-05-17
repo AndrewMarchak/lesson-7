@@ -17,8 +17,12 @@
 
 - git reset --hard HEAD~1
 
--git restore .
--git restore filename
+- git restore .
+- git restore filename
 
--  git checkout branch-name
--  git checkout commit-hash
+- git checkout branch-name
+- git checkout commit-hash
+
+- git branch 
+- git branch -v
+- git branch new-branch-name
