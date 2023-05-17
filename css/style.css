@@ -1,0 +1,157 @@
+:root {
+  --size: 200px;
+  --border-width: 10px;
+  --gap: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/img1.jpg);
+  background-attachment: local;
+}
+
+.main-menu {
+  border: 2px solid olive;
+  background-color: chartreuse;
+  text-align: center;
+  font-size: 25px;
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.main-menu:hover {
+  background-color: darkred;
+  border: 2px solid chocolate;
+}
+
+.main-menu:hover .main-menu__link {
+  color: chocolate;
+}
+
+.container {
+  height: var(--size);
+  background-color: gray;
+  float: left;
+  margin: var(--gap);
+  border: var(--border-width) solid black;
+  position: relative;
+}
+
+.container--sm {
+  width: calc(var(--size) + var(--border-width) * 2);
+}
+
+.container--lg {
+  width: calc(var(--size) * 2 + var(--border-width) * 2);
+}
+
+.block {
+  width: 50%;
+  height: 50%;
+  background-color: cadetblue;
+  position: absolute;
+}
+
+.block--1 {
+  background-color: green;
+  top: 0px;
+  left: 0px;
+}
+
+.block--2 {
+  background-color: white;
+  top: 0px;
+  left: 50%;
+}
+
+.block--3 {
+  background-color: black;
+  top: 50%;
+  left: 0px;
+}
+
+.block--4 {
+  background-color: magenta;
+  top: 50%;
+  left: 50%;
+}
+
+.block--5 {
+  right: 0;
+  transform: translate(50%, 50%);
+  width: 25%;
+}
+
+.block--6 {
+  left: 0;
+  z-index: -1;
+  transform: translate(-50%, 50%);
+  width: 25%;
+}
+
+.block--7 {
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, 50%);
+  width: 25%;
+}
+
+.block-lg {
+  position: absolute;
+  background-color: red;
+  top: var(--gap);
+  left: var(--gap);
+  bottom: var(--gap);
+  right: var(--gap);
+}
+
+.block--w25 {
+  width: 25%;
+  position: absolute;
+  background-color: blue;
+  bottom: 0;
+}
+
+.menu__item {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+}
+
+.menu__item-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.menu__item-caption {
+  padding: 20px;
+  background-color: darkred;
+}
+
+.menu__item-link {
+  font-size: 25px;
+  color: white;
+}
+
+.menu__item-img {
+  width: 75%;
+  padding: 20px;
+}
+
+.menu__item-content:hover {
+  outline: 1px solid black;
+}
+
+.menu__item-content:hover .menu__item-caption {
+  background-color: yellow;
+}
+
+.menu__item-content:hover .menu__item-link {
+  color: black;
+}

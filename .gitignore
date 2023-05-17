@@ -1,0 +1,6 @@
+#ignored folders
+node_modules/
+.idea/
+.vscode/
+#ignored files
+.DS_Store
