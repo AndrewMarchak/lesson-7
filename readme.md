@@ -19,3 +19,6 @@
 
 -git restore .
 -git restore filename
+
+-  git checkout branch-name
+-  git checkout commit-hash
