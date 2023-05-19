@@ -30,3 +30,5 @@
 - git merge branch
 - git remote
 - git push
+
+- git pull
