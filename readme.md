@@ -26,3 +26,7 @@
 - git branch 
 - git branch -v
 - git branch new-branch-name
+
+- git merge branch
+- git remote
+- git push
